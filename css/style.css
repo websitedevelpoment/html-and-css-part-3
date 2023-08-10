@@ -126,6 +126,43 @@ a {
     fill: var(--color-primary);
 }
 
+.icon--bg {
+    width: 60px;
+    height: 64px;
+    border-radius: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.collapsible__rotate {
+    transform: rotate(-90deg);
+}
+
+.collapsible__heading {
+    margin-top: 0%;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.collapsible__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapsible__content {
+    display: none;
+}
+
+.collapsible--expanded .collapsible__rotate {
+    transform: rotate(0);
+}
+
+.collapsible--expanded.collapsible__content {
+    display: block;
+}
+
 .icon-container {
     background: #f3f9fa;
     width: 510px;
@@ -191,6 +228,12 @@ a {
 .btn--outline:hover {
     background: var(--color-headings);
     color: #fff;
+}
+
+.btn--style {
+    width: 18rem;
+    align-self: center;
+    justify-self: center;
 }
 
 .input {
@@ -323,8 +366,15 @@ a {
     font-style: normal;
 }
 
+.gridss {
+    display: grid;
+    grid-template-columns: 1fr 100%;
+
+}
+
 .grid {
     display: grid;
+
 }
 
 .grid-cols--2 {
@@ -346,8 +396,8 @@ a {
 }
 
 .testimonials--contentimage {
-    width: 60rem;
-    height: 30rem;
+    width: 13rem;
+    height: 13rem;
     border: 2px solid red;
 }
 
@@ -362,7 +412,7 @@ a {
     width: 30rem;
     position: absolute;
     top: 3rem;
-    left: 45rem;
+    right: 47rem;
     height: 6rem;
 }
 
@@ -394,6 +444,10 @@ a {
 @media screen and (min-width:768px) {
     .grid-cols-2 {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grids {
+        grid-template-columns: 100%;
     }
 }
 
