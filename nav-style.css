@@ -37,12 +37,6 @@ a {
     text-decoration-line: none;
 }
 
-.menu {
-    width: 3rem;
-    background-color: black;
-    height: 2.5rem;
-}
-
 .nav__toggler {
     opacity: 0.5;
 }
