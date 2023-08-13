@@ -554,8 +554,14 @@ a {
 
 .testimonial__image>.icon-container {
   position: absolute;
-  top: 3rem;
+  top: 3px;
   right: -32px;
+}
+
+.testimonial__image>.icon-container-testimonial {
+  position: absolute;
+  bottom: 370px;
+  left: -37px;
 }
 
 @media screen and (min-width: 768px) {
