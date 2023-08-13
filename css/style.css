@@ -223,6 +223,10 @@ a {
     background: #ec3000;
 }
 
+.btn--heading {
+    color: var(--color-headings);
+}
+
 .btn--block {
     display: inline-block;
     width: 100%;
