@@ -29,12 +29,47 @@ body {
   color: var(--color-body);
 }
 
+.paragraph {
+  width: 100%;
+  padding-left: 7rem;
+  font-size: 2rem;
+}
+
+.body-centre {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  line-height: 4rem;
+  font-size: 2.5rem;
+}
+
 h1,
 h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
   line-height: 1.1;
+}
+
+.topic-header {
+  margin: 0 6rem;
+}
+
+.h2-margin {
+  margin: 1rem 0;
+}
+
+.h2-centre {
+  justify-content: center;
+  display: flex;
+  margin: 2rem;
+}
+
+.a-link {
+  color: #000;
+  text-transform: capitalize;
 }
 
 h1 {
@@ -149,6 +184,12 @@ a {
 .list--tick {
   list-style-image: url(../images/tick.svg);
   padding-left: 3rem;
+}
+
+.exercise--list {
+  width: 100%;
+  font-size: 1.6rem;
+  margin-left: 8rem;
 }
 
 .list--tick .list__item {
@@ -338,6 +379,10 @@ a {
 }
 
 /* Plans */
+.plan {
+  transition: transform .2s ease-in;
+}
+
 .plan__name {
   color: #fff;
   margin: 0;
@@ -369,6 +414,14 @@ a {
 
 .plan--popular {
   transform: scale(1.1);
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan--popular:hover {
+  transform: scale(1.15);
 }
 
 .plan--popular .card__header {
@@ -749,10 +802,34 @@ a {
 
 /* plans blocks */
 .block-plans .grid {
-  gap: 4rem;
+  gap: 8rem 4rem;
 }
 
 .block-plans .card {
   max-width: 500px;
   margin: 0, auto;
+}
+
+/* features */
+.feature__heading {
+  margin: 1rem 0;
+}
+
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
 }
