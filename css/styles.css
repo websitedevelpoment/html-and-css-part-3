@@ -244,7 +244,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   outline: 0;
   text-align: center;
   text-transform: uppercase;
@@ -335,6 +335,7 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
+  width: 0;
   padding: 1.5rem 2rem;
 }
 
@@ -791,12 +792,13 @@ a {
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
   justify-items: center;
   max-width: 700px;
+  color: var(--color-headings);
   margin: 0 auto;
 }
 
