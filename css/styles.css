@@ -115,10 +115,11 @@ p {
   text-transform: capitalize;
 }
 
-/* Links */
 a {
   text-decoration: none;
 }
+
+/* Links */
 
 .link-arrow {
   color: var(--color-accent);
